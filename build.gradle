@@ -13,6 +13,7 @@ apply plugin: 'spring-boot'
 version = '0.1.0-SNAPSHOT'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
@@ -21,7 +22,7 @@ targetCompatibility = 1.7
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
-    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.2.1'
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.2.2-handlebarsHelper-SNAPSHOT'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
