@@ -1,6 +1,6 @@
 package hello;
 
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.containsString;
 import static org.junit.Assert.assertThat;
 
 import com.google.common.base.Charsets;
@@ -33,6 +33,6 @@ public class HelloControllerTest {
         String responseBody = Resources.toString(helloPage, Charsets.UTF_8);
 
         // then
-        assertThat(responseBody, equalTo("Hello World!"));
+        assertThat(responseBody, containsString("<title>Hello World!</title>"));
     }
 }
