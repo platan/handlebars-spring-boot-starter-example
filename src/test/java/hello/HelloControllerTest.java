@@ -34,5 +34,6 @@ public class HelloControllerTest {
 
         // then
         assertThat(responseBody, containsString("<title>Hello World!</title>"));
+        assertThat(responseBody, containsString("2017"));
     }
 }
