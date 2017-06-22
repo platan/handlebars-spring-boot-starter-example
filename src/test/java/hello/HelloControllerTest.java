@@ -1,8 +1,5 @@
 package hello;
 
-import static org.hamcrest.Matchers.containsString;
-import static org.junit.Assert.assertThat;
-
 import com.google.common.base.Charsets;
 import com.google.common.io.Resources;
 import org.junit.Test;
@@ -14,6 +11,10 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 
 import java.net.URL;
+import java.util.Calendar;
+
+import static org.hamcrest.Matchers.containsString;
+import static org.junit.Assert.assertThat;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @SpringApplicationConfiguration(classes = Application.class)
@@ -34,6 +35,6 @@ public class HelloControllerTest {
 
         // then
         assertThat(responseBody, containsString("<title>Hello World!</title>"));
-        assertThat(responseBody, containsString("2017"));
+        assertThat(responseBody, containsString(String.valueOf(Calendar.getInstance().get(Calendar.YEAR))));
     }
 }
