@@ -3,7 +3,7 @@ Example showing [Spring Boot auto-configuration for Handlebars](https://github.c
 
 Requirements
 ---
-- JDK 7
+- JDK 8
 
 Usage
 ---
