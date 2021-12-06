@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.3.5.RELEASE')
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.5.7')
     }
 }
 
@@ -24,5 +24,9 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
     compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.3'
 
-    testCompile 'org.springframework.boot:spring-boot-starter-test:2.3.5.RELEASE'
+    testCompile 'org.springframework.boot:spring-boot-starter-test'
+}
+
+test {
+    useJUnitPlatform()
 }
