@@ -22,7 +22,7 @@ sourceCompatibility = 1.8
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
-    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.3'
+    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.3.4'
 
     testCompile 'org.springframework.boot:spring-boot-starter-test'
 }
