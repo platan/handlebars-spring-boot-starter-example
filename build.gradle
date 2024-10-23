@@ -3,7 +3,7 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.7.18')
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:3.3.4')
     }
 }
 
@@ -18,13 +18,13 @@ repositories {
     mavenCentral()
 }
 
-sourceCompatibility = 1.8
+sourceCompatibility = 17
 
 dependencies {
-    compile 'org.springframework.boot:spring-boot-starter-web'
-    compile 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.4.1'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'pl.allegro.tech.boot:handlebars-spring-boot-starter:0.5.0'
 
-    testCompile 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
 test {
